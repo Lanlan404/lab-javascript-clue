@@ -110,7 +110,7 @@ function selectRandom(anArray) {
 }
 
 function pickMystery() {
-  misteryObject = {
+  let misteryObject = {
     suspect :selectRandom(suspectsArray),
     weapon :selectRandom(weaponsArray),
     room :selectRandom(roomsArray),
@@ -122,9 +122,10 @@ function pickMystery() {
 // ITERATION 3
 
 function revealMystery(misteryObject) {
-  return 
+   let result=misteryObject.suspect.firstName+" "+ misteryObject.suspect.lastName+" killed Mr. Boddy using the "+misteryObject.weapon.name+" in the "+misteryObject.room.name+"!"
+
+   return result
 }
-<FIRST NAME> <LAST NAME> killed Mr. Boddy using the <WEAPON> in the <ROOM>!
 
 
 
